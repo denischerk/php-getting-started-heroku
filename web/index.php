@@ -11,7 +11,7 @@ Hello
   
   
   <?php if (isset($_GET['submitted'])) { ?>
-   <div style="background-color: <?php echo htmlspecialchars($_GET['color']); ?>;border-radius: 10px; border: solid green 1px;"> <h1>The server had accepted:</h1>
+   <div style="background-color: <?php echo htmlspecialchars($_GET['color']); ?>;border-radius: <?php echo htmlspecialchars($_GET['text']); ?>; border: solid green 1px;"> <h1>The server had accepted:</h1>
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
   <p >text: <span style="font-weight: bold;"> <?php echo htmlspecialchars($_GET['text']); ?></span></p>
     <p>area: <?php echo htmlspecialchars($_GET['area']); ?></p>
