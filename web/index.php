@@ -20,7 +20,7 @@ Hello
       <p>color: <?php echo htmlspecialchars($_GET['color']); ?> <span style="background-color: <?php echo htmlspecialchars($_GET['radio']); ?>; ">&nbsp &nbsp &nbsp &nbsp</span></p>
     <p>Try again? <a href="/index.php">Yes!</a></p>
   <?php } ?>
-
+<?php if (!isset($_GET['submitted'])) { ?>
   
   
   
