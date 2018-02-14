@@ -11,7 +11,7 @@ Hello
   
   
   <?php if (isset($_GET['submitted'])) { ?>
-   <div style="background-color: <?php echo htmlspecialchars($_GET['color']); ?>;border-radius: <?php echo htmlspecialchars($_GET['text']); ?>; border: solid green 1px;"> <h1>The server had accepted:</h1>
+   <div style="background-color: <?php echo htmlspecialchars($_GET['color']); ?>;padding-left: <?php echo htmlspecialchars($_GET['range']); ?>; border-radius: <?php echo htmlspecialchars($_GET['text']); ?>; border: solid green 1px;"> <h1>The server had accepted:</h1>
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
   <p >radius: <span style="font-weight: bold;"> <?php echo htmlspecialchars($_GET['text']); ?></span></p>
     <p>area: <?php echo htmlspecialchars($_GET['area']); ?></p>
@@ -35,9 +35,9 @@ Hello
       <input id="my-radio-yes" name="radio" type="radio" required value="Yes">
       <label for="my-radio-no">radio No: </label>
       <input id="my-radio-no" name="radio" type="radio" required value="No"></p>
-    <br>
-    <label for="ranged">radius: </label> 
-    <input type="range" min="0px" max="100px" value="25" name="range" id="ranged"><br>
+    <br>    <br>
+    <label for="ranged">padding: </label> 
+    <input type="range" min="0px" max="100px" value="25" name="range" id="ranged"><br>    <br>
     
     <label for="my-text">radius: </label>         <input id="my-text" type="text" name="text" required maxlength="5"
                                                       placeholder="Введите радиус"><br>
