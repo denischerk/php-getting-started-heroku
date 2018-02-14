@@ -15,6 +15,9 @@ Hello
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
   <p >radius: <span style="font-weight: bold;"> <?php echo htmlspecialchars($_GET['text']); ?></span></p>
     <p>area: <?php echo htmlspecialchars($_GET['area']); ?></p>
+     
+      <p>padding: <?php echo htmlspecialchars($_GET['range']); ?></p>
+     
     <p>chek: <?php echo htmlspecialchars($_GET['chek']); ?></p>
      <p>sel: <?php echo htmlspecialchars($_GET['sel']); ?></p>
       <p>color: <?php echo htmlspecialchars($_GET['color']); ?> <span style="background-color: <?php echo htmlspecialchars($_GET['color']); ?>; ">&nbsp &nbsp &nbsp &nbsp</span></p>
@@ -33,6 +36,9 @@ Hello
       <label for="my-radio-no">radio No: </label>
       <input id="my-radio-no" name="radio" type="radio" required value="No"></p>
     <br>
+    <label for="ranged">radius: </label> 
+    <input type="range" min="0px" max="100px" value="25" name="range" id="ranged"><br>
+    
     <label for="my-text">radius: </label>         <input id="my-text" type="text" name="text" required maxlength="5"
                                                       placeholder="Введите радиус"><br>
 
