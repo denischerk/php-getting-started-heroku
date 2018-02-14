@@ -11,14 +11,14 @@ Hello
   
   
   <?php if (isset($_GET['submitted'])) { ?>
-    <h1>The server had accepted:</h1>
+   <div style="background-color: <?php echo htmlspecialchars($_GET['color']); ?>; border: solid green 1px;"> <h1>The server had accepted:</h1>
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
   <p >text: <span style="font-weight: bold;"> <?php echo htmlspecialchars($_GET['text']); ?></span></p>
     <p>area: <?php echo htmlspecialchars($_GET['area']); ?></p>
     <p>chek: <?php echo htmlspecialchars($_GET['chek']); ?></p>
      <p>sel: <?php echo htmlspecialchars($_GET['sel']); ?></p>
       <p>color: <?php echo htmlspecialchars($_GET['color']); ?> <span style="background-color: <?php echo htmlspecialchars($_GET['color']); ?>; ">&nbsp &nbsp &nbsp &nbsp</span></p>
-    <p>Try again? <a href="/index.php">Yes!</a></p>
+     <p>Try again? <a href="/index.php">Yes!</a></p> </div>
   <?php } ?>
 <?php if (!isset($_GET['submitted'])) { ?>
   
