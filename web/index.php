@@ -17,7 +17,7 @@ Hello
     <p>area: <?php echo htmlspecialchars($_GET['area']); ?></p>
     <p>chek: <?php echo htmlspecialchars($_GET['chek']); ?></p>
      <p>sel: <?php echo htmlspecialchars($_GET['sel']); ?></p>
-      <p>color: <?php echo htmlspecialchars($_GET['color']); ?> <span style="background-color: <?php echo htmlspecialchars($_GET['radio']); ?>; ">&nbsp &nbsp &nbsp &nbsp</span></p>
+      <p>color: <?php echo htmlspecialchars($_GET['color']); ?> <span style="background-color: <?php echo htmlspecialchars($_GET['color']); ?>; ">&nbsp &nbsp &nbsp &nbsp</span></p>
     <p>Try again? <a href="/index.php">Yes!</a></p>
   <?php } ?>
 <?php if (!isset($_GET['submitted'])) { ?>
